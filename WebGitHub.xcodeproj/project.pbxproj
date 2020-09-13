@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		12A7E239250BE16700878C5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E238250BE16700878C5D /* AppDelegate.swift */; };
 		12A7E23B250BE16700878C5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E23A250BE16700878C5D /* SceneDelegate.swift */; };
-		12A7E23D250BE16700878C5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E23C250BE16700878C5D /* ViewController.swift */; };
 		12A7E240250BE16700878C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7E23E250BE16700878C5D /* Main.storyboard */; };
 		12A7E243250BE16700878C5D /* WebGitHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E241250BE16700878C5D /* WebGitHub.xcdatamodeld */; };
 		12A7E245250BE16A00878C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A7E244250BE16A00878C5D /* Assets.xcassets */; };
 		12A7E248250BE16A00878C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A7E246250BE16A00878C5D /* LaunchScreen.storyboard */; };
+		12A7E250250BE22D00878C5D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E24F250BE22D00878C5D /* ListTableViewController.swift */; };
+		12A7E252250BE25F00878C5D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A7E251250BE25F00878C5D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12A7E235250BE16700878C5D /* WebGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A7E238250BE16700878C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A7E23A250BE16700878C5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12A7E23C250BE16700878C5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12A7E23F250BE16700878C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12A7E242250BE16700878C5D /* WebGitHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WebGitHub.xcdatamodel; sourceTree = "<group>"; };
 		12A7E244250BE16A00878C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A7E247250BE16A00878C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A7E249250BE16A00878C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12A7E24F250BE22D00878C5D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		12A7E251250BE25F00878C5D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				12A7E238250BE16700878C5D /* AppDelegate.swift */,
 				12A7E23A250BE16700878C5D /* SceneDelegate.swift */,
-				12A7E23C250BE16700878C5D /* ViewController.swift */,
 				12A7E23E250BE16700878C5D /* Main.storyboard */,
 				12A7E244250BE16A00878C5D /* Assets.xcassets */,
 				12A7E246250BE16A00878C5D /* LaunchScreen.storyboard */,
 				12A7E249250BE16A00878C5D /* Info.plist */,
 				12A7E241250BE16700878C5D /* WebGitHub.xcdatamodeld */,
+				12A7E24F250BE22D00878C5D /* ListTableViewController.swift */,
+				12A7E251250BE25F00878C5D /* WebViewController.swift */,
 			);
 			path = WebGitHub;
 			sourceTree = "<group>";
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A7E23D250BE16700878C5D /* ViewController.swift in Sources */,
 				12A7E239250BE16700878C5D /* AppDelegate.swift in Sources */,
 				12A7E23B250BE16700878C5D /* SceneDelegate.swift in Sources */,
 				12A7E243250BE16700878C5D /* WebGitHub.xcdatamodeld in Sources */,
+				12A7E252250BE25F00878C5D /* WebViewController.swift in Sources */,
+				12A7E250250BE22D00878C5D /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lv.mngeyapp.WebGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lv.mngeyapp.WebGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
